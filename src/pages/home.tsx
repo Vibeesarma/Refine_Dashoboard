@@ -43,15 +43,13 @@ const home = () => {
         />
       </Box>
       <Stack
-        bgcolor={"red"}
         mt="25px"
         width="100%"
         direction={{ xs: "column", lg: "row" }}
+        gap={4}
       >
-
-      <TotalRevenue/>
-      <PropertyReferrals/>
-
+        <TotalRevenue />
+        <PropertyReferrals />
       </Stack>
     </Box>
   );

@@ -38,6 +38,7 @@ import {
 } from "pages";
 import { CredentialResponse } from "interfaces/google";
 import { parseJwt } from "utils/parse-jwt";
+import propertyDetails from "pages/property-details";
 
 const axiosInstance = axios.create();
 axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
@@ -118,7 +119,10 @@ function App() {
           resources={[
             {
               name: "property",
-              list: MuiInferencer,
+              list: AllProperties,
+              show: propertyDetails,
+              create: CreateProperty,
+              edit: EditProperty,
               icon: <VillaOutlined />,
             },
             {
