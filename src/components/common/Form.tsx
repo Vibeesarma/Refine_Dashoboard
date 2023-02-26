@@ -10,7 +10,6 @@ import {
   Select,
   MenuItem,
   Button,
-  fontSize,
 } from "@pankod/refine-mui";
 
 import { FormProps } from "interfaces/common";
